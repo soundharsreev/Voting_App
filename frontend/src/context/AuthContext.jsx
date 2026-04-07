@@ -9,7 +9,7 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   // Set default axios params
-  axios.defaults.baseURL = 'http://localhost:5000/api';
+  axios.defaults.baseURL = 'https://voting-app-backend-un9l.onrender.com/api';
 
   useEffect(() => {
     const token = localStorage.getItem('token');
